@@ -1,6 +1,7 @@
 package com.example.TaskManagemmentSystem.controller;
 
 import com.example.TaskManagemmentSystem.entity.Task;
+import com.example.TaskManagemmentSystem.entity.User;
 import com.example.TaskManagemmentSystem.repository.TaskRepository;
 import com.example.TaskManagemmentSystem.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +16,7 @@ import java.util.List;
 public class UserController {
 
     @PostMapping("/save-user")
-    public String saveUser(@RequestBody Task task){
-
+    public String saveUser(@RequestBody User user){
         return "User Saved Successfully";
     }
 

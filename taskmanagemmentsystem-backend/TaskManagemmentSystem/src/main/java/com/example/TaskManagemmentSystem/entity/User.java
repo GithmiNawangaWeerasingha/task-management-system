@@ -1,6 +1,5 @@
 package com.example.TaskManagemmentSystem.entity;
 
-import com.example.TaskManagemmentSystem.dto.UserDto;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
