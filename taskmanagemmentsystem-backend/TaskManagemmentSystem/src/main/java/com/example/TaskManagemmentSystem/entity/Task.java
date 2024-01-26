@@ -1,10 +1,6 @@
 package com.example.TaskManagemmentSystem.entity;
 
-import com.example.TaskManagemmentSystem.dto.UserDto;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,5 +15,9 @@ public class Task {
     private int id;
     private String description;
     private Boolean completed;
-    private UserDto userDetails;
+
+    @ManyToOne
+    @JoinColumn
+    private PublicUser publicUser;
+
 }
