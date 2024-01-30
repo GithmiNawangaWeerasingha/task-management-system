@@ -53,7 +53,7 @@ public class PublicUserController {
         }
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity deleteUser(@PathVariable(value = "id") int id) {
         try {
             publicUserService.deleteUser(id);
